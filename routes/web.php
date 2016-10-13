@@ -19,7 +19,7 @@ Route::get('/', function () {
         'client_id' => 3,
         'redirect_uri' => 'http://consumer.local/callback',
         'response_type' => 'code',
-        'scope' => ''
+        'scope' => 'place-orders check-status',
     ]);
 
     return redirect('http://laravel.local/oauth/authorize?' . $query);
